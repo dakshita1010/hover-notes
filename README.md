@@ -113,16 +113,6 @@ Notes are stored locally, providing fast access and eliminating unnecessary depe
 
 ---
 
-**Keyboard Shortcuts**
-
-Shortcut	Function
-Alt + Shift + N	 Toggle HoverNotes visibility
-
-Alt + Shift + G	 Toggle Ghost / Click-Through Mode
-
-
----
-
 **Getting Started**
 
 **Prerequisites**
