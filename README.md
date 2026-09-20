@@ -69,25 +69,6 @@ Tool	Function
 
 ---
 
-**Technical Highlights**
-
-HoverNotes demonstrates several desktop-application engineering concepts:
-
-* Window management and always-on-top behavior
-* Global keyboard shortcut registration
-* Mouse event interception and click-through windows
-* Dynamic window opacity control
-* Multi-window/tab state management
-* Local persistent data storage
-* System tray integration
-* Keyboard-driven application control
-* Desktop UI/UX optimization
-* Cross-application multitasking
-
-The application is designed around a lightweight architecture so that its core functionality remains available without requiring users to keep a browser tab or large productivity application open.
-
----
-
 **Core Interaction Model**
 
                     ┌───────────────────────┐
@@ -176,37 +157,6 @@ run-hovernotes.bat
 
 ---
 
-**Example Use Cases**
-
-HoverNotes can be used for:
-
-* Keeping study notes visible while watching lectures.
-* Referencing documentation while coding
-* Maintaining debugging checklists while troubleshooting
-* Keeping task lists visible during development
-* Referencing instructions while working in a browser
-* Taking notes while watching videos
-* Keeping cybersecurity commands or investigation checklists accessible during labs
-
----
-
-**Engineering Value**
-
-This project demonstrates practical experience beyond conventional CRUD applications by interacting directly with the desktop environment and operating-system-level window behavior.
-
-**Key engineering challenges addressed include:**
-
-* Maintaining an always-on-top application without disrupting other windows.
-* Implementing global keyboard shortcuts outside the application’s active window.
-* Dynamically changing mouse interaction behavior through Ghost Mode.
-* Managing transparent floating UI elements.
-* Persisting multiple independent notes locally.
-* Balancing accessibility with minimal screen-space usage.
-
-These features make HoverNotes a practical demonstration of desktop application development, event-driven programming, UI engineering, state management, and Windows integration.
-
----
-
 **Project Highlights**
 
 **Project Type:** Desktop Productivity Application
@@ -215,11 +165,5 @@ These features make HoverNotes a practical demonstration of desktop application 
 **Storage:** Local persistent storage
 **Interaction:** Mouse + Keyboard + Global Hotkeys
 **Primary Focus:** Desktop UI, window management, productivity, local persistence
-
----
-
-**Skills Demonstrated**
-
-Desktop Application Development · UI/UX Engineering · Event-Driven Programming · Window Management · Global Hotkeys · Local Data Persistence · State Management · Windows Integration · JavaScript/Node.js · Software Design
 
 ---
