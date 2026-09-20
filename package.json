@@ -1,0 +1,21 @@
+{
+  "name": "hover-notes",
+  "version": "1.0.0",
+  "description": "A floating, non-intrusive desktop notes app that hovers over other applications",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "notes",
+    "floating",
+    "always-on-top",
+    "electron",
+    "overlay"
+  ],
+  "author": "Antigravity",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^33.2.1"
+  }
+}

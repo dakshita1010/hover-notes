@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HoverNotes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container" id="appContainer">
+    <!-- Top Drag Bar & Controls -->
+    <header class="drag-bar">
+      <div class="app-branding">
+        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 20h9"></path>
+          <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+        </svg>
+        <span class="app-title">HoverNotes</span>
+      </div>
+
+      <div class="header-controls no-drag">
+        <!-- Ghost / Click-Through Mode -->
+        <button id="ghostBtn" class="icon-btn" title="Ghost Mode (Alt+Shift+G): clicks pass through to background">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18h6"></path>
+            <path d="M10 22h4"></path>
+            <path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7z"></path>
+          </svg>
+        </button>
+
+        <!-- Pin / Always on Top -->
+        <button id="pinBtn" class="icon-btn active" title="Toggle Always on Top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="17" x2="12" y2="22"></line>
+            <path d="M5 17h14v-2l-2-3V6a2 2 0 0 0-2-2h-6a2 2 0 0 0-2 2v6l-2 3v2z"></path>
+          </svg>
+        </button>
+
+        <!-- Opacity Toggle Popover -->
+        <div class="opacity-dropdown-wrapper">
+          <button id="opacityBtn" class="icon-btn" title="Adjust Transparency">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 2a10 10 0 0 1 0 20z"></path>
+            </svg>
+          </button>
+          <div id="opacityPopup" class="opacity-popup hidden">
+            <span class="slider-label">Opacity: <strong id="opacityVal">95%</strong></span>
+            <input type="range" id="opacitySlider" min="20" max="100" value="95" step="5">
+          </div>
+        </div>
+
+        <!-- Collapse / Expand Window -->
+        <button id="collapseBtn" class="icon-btn" title="Collapse / Expand widget">
+          <svg id="collapseIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
+
+        <!-- Hide / Minimize to Tray -->
+        <button id="hideBtn" class="icon-btn close-btn" title="Minimize to Tray (Alt+Shift+N to restore)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Ghost Mode Notice (Active overlay banner) -->
+    <div id="ghostBanner" class="ghost-banner hidden">
+      <span>👻 Ghost Mode Active. Press <strong>Alt+Shift+G</strong> to edit.</span>
+    </div>
+
+    <!-- Main Content Area (collapsible) -->
+    <main id="mainBody" class="main-body">
+      <!-- Tabs Bar -->
+      <nav class="tabs-bar no-drag">
+        <div class="tabs-scroll" id="tabsContainer">
+          <!-- Dynamic note tabs inserted here -->
+        </div>
+        <button id="addNoteBtn" class="tab-action-btn" title="New Note">+</button>
+      </nav>
+
+      <!-- Note Formatting Toolbar -->
+      <section class="toolbar no-drag">
+        <div class="toolbar-left">
+          <button id="todoBtn" class="tool-btn" title="Insert Checkbox">☑ Checkbox</button>
+          <button id="bulletBtn" class="tool-btn" title="Insert Bullet List">• List</button>
+          <button id="timestampBtn" class="tool-btn" title="Insert Date & Time">🕒 Timestamp</button>
+        </div>
+        <div class="toolbar-right">
+          <button id="copyBtn" class="tool-btn" title="Copy note to clipboard">📋 Copy</button>
+          <button id="deleteNoteBtn" class="tool-btn delete-btn" title="Delete current note">🗑️</button>
+        </div>
+      </section>
+
+      <!-- Note Editor -->
+      <section class="editor-section">
+        <textarea 
+          id="noteEditor" 
+          placeholder="Start typing your thoughts, links, or quick to-do items here...&#10;&#10;✨ Tip: Use Alt+Shift+N to summon or dismiss HoverNotes anytime." 
+          spellcheck="false"
+        ></textarea>
+      </section>
+
+      <!-- Footer Status Bar -->
+      <footer class="footer-bar no-drag">
+        <div class="save-status">
+          <span class="status-dot"></span>
+          <span id="saveStatusText">Saved</span>
+        </div>
+        <div class="stats">
+          <span id="wordCount">0 words</span> • <span id="charCount">0 chars</span>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Collapsed Compact Bar (Shown only when collapsed) -->
+    <div id="collapsedBar" class="collapsed-bar hidden no-drag">
+      <span class="collapsed-text" id="collapsedSummary">HoverNotes (0 notes)</span>
+      <span class="collapsed-hint">Click to expand</span>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

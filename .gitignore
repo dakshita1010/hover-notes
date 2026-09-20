@@ -1,0 +1,17 @@
+# Dependency directories
+node_modules/
+
+# Build artifacts
+dist/
+out/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# User data
+hover-notes-data.json
