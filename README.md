@@ -115,11 +115,10 @@ Notes are stored locally, providing fast access and eliminating unnecessary depe
 
 **Keyboard Shortcuts**
 
-Column 1	Column 2
 Shortcut	Function
-Alt + Shift + N	Toggle HoverNotes visibility
-Alt + Shift + G	Toggle Ghost / Click-Through Mode
-Tab	Indent text by 2 spaces in the editor
+Alt + Shift + N	 Toggle HoverNotes visibility
+
+Alt + Shift + G	 Toggle Ghost / Click-Through Mode
 
 
 ---
