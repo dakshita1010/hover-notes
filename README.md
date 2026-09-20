@@ -1,4 +1,4 @@
-HoverNotes
+**HoverNotes**
 
 A lightweight, always-on-top desktop notes application for Windows with global hotkeys, click-through interaction, adjustable transparency, multi-note management, and persistent local storage.
 
@@ -8,27 +8,27 @@ Unlike conventional note-taking applications that require constant window switch
 
 ---
 
-Key Features
+**Key Features**
 
-Always-On-Top Floating Window
+**Always-On-Top Floating Window**
 
 * Keeps the notes interface above other desktop applications.
 * Designed for multitasking without repeatedly switching between windows.
 * Useful for coding references, task lists, documentation, study material, and workflows.
 
-Ghost / Click-Through Mode
+**Ghost / Click-Through Mode**
 
 * Toggle using Alt + Shift + G.
 * Allows mouse interactions to pass through the notes window to applications underneath.
 * Enables users to keep reference information visible without blocking interaction with the underlying application.
 
-Dynamic Window Transparency
+**Dynamic Window Transparency**
 
 * Adjustable opacity from 20% to 100%.
 * Provides flexible visibility while working with content behind the notes window.
 * Allows the widget to behave as either a fully readable note panel or a subtle overlay.
 
-Quick Editor Toolbar
+**Quick Editor Toolbar**
 
 HoverNotes includes a lightweight quick-action toolbar that speeds up common note-taking tasks:
 Tool	Function
@@ -37,31 +37,31 @@ Tool	Function
 * Timestamp	Inserts the current date and time
 * Copy	Copies the current note content directly to the clipboard
 
-Global Keyboard Shortcuts
+**Global Keyboard Shortcuts**
 
 * Alt + Shift + N toggles HoverNotes visibility from anywhere in Windows.
 * Alt + Shift + G toggles Ghost Mode.
 * Shortcuts enable fast interaction without requiring mouse navigation.
 
-Multi-Note Workspace
+**Multi-Note Workspace**
 
 * Supports multiple notes through a tab-based interface.
 * Notes can be renamed by double-clicking their tabs.
 * Lets users organize tasks, projects, references, or checklists independently.
 
-Persistent Local Storage
+**Persistent Local Storage**
 
 * Automatically saves changes locally.
 * Notes persist between application sessions.
 * Eliminates the need for manual save operations or external cloud services.
 
-Collapsible Mini-Dock
+**Collapsible Mini-Dock**
 
 * Converts the full notes interface into a compact floating dock.
 * Reduces screen usage when the complete editor is not required.
 * Can remain accessible while working with other applications.
 
-System Tray Integration
+**System Tray Integration**
 
 * Runs unobtrusively in the Windows system tray.
 * Allows the application to remain available without occupying the taskbar.
@@ -69,7 +69,7 @@ System Tray Integration
 
 ---
 
-Technical Highlights
+**Technical Highlights**
 
 HoverNotes demonstrates several desktop-application engineering concepts:
 
@@ -88,7 +88,7 @@ The application is designed around a lightweight architecture so that its core f
 
 ---
 
-Core Interaction Model
+**Core Interaction Model**
 
                     ┌───────────────────────┐
                     │      HoverNotes       │
@@ -110,29 +110,29 @@ Core Interaction Model
 
 ---
 
-Design Goals
+**Design Goal**s
 
 HoverNotes was developed around four primary goals:
 
-1. Minimal Disruption
+**1. Minimal Disruption**
 
 Keep frequently referenced information available without forcing users to repeatedly switch applications.
 
-2. Keyboard-First Interaction
+**2. Keyboard-First Interaction**
 
 Global shortcuts provide rapid access to the application while keeping the user’s hands on the keyboard.
 
-3. Flexible Desktop Integration
+**3. Flexible Desktop Integration**
 
 The floating interface is designed to coexist with existing workflows rather than replacing them.
 
-4. Local-First Persistence
+**4. Local-First Persistence**
 
 Notes are stored locally, providing fast access and eliminating unnecessary dependency on external services for basic note-taking.
 
 ---
 
-Keyboard Shortcuts
+**Keyboard Shortcuts**
 
 Column 1	Column 2
 Shortcut	Function
@@ -143,9 +143,9 @@ Tab	Indent text by 2 spaces in the editor
 
 ---
 
-🛠️ Getting Started
+**Getting Started**
 
-Prerequisites
+**Prerequisites**
 
 Make sure the following are installed:
 
@@ -153,18 +153,18 @@ Make sure the following are installed:
 * npm
 * Windows OS
 
-Installation
+**Installation**
 
 Clone the repository:
 
 git clone <repository-url>
 cd HoverNotes
 
-Install dependencies:
+**Install dependencies:**
 
 npm install
 
-Run the Application
+**Run the Application**
 
 Using npm:
 
@@ -176,7 +176,7 @@ run-hovernotes.bat
 
 ---
 
-Example Use Cases
+**Example Use Cases**
 
 HoverNotes can be used for:
 
@@ -190,11 +190,11 @@ HoverNotes can be used for:
 
 ---
 
-Engineering Value
+**Engineering Value**
 
 This project demonstrates practical experience beyond conventional CRUD applications by interacting directly with the desktop environment and operating-system-level window behavior.
 
-Key engineering challenges addressed include:
+**Key engineering challenges addressed include:**
 
 * Maintaining an always-on-top application without disrupting other windows.
 * Implementing global keyboard shortcuts outside the application’s active window.
@@ -207,18 +207,18 @@ These features make HoverNotes a practical demonstration of desktop application 
 
 ---
 
-Project Highlights
+**Project Highlights**
 
-Project Type: Desktop Productivity Application
-Platform: Windows
-Architecture: Event-driven desktop application
-Storage: Local persistent storage
-Interaction: Mouse + Keyboard + Global Hotkeys
-Primary Focus: Desktop UI, window management, productivity, local persistence
+**Project Type:** Desktop Productivity Application
+**Platform:** Windows
+**Architecture:** Event-driven desktop application
+**Storage:** Local persistent storage
+**Interaction:** Mouse + Keyboard + Global Hotkeys
+**Primary Focus:** Desktop UI, window management, productivity, local persistence
 
 ---
 
-Skills Demonstrated
+**Skills Demonstrated**
 
 Desktop Application Development · UI/UX Engineering · Event-Driven Programming · Window Management · Global Hotkeys · Local Data Persistence · State Management · Windows Integration · JavaScript/Node.js · Software Design
 
